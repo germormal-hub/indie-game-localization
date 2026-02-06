@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanish Game Localization | Indie Game Translation Services</title>
+    <meta name="description" content="AI-powered Spanish localization for indie games. Expert gaming QA, cultural adaptation, Steam-ready in 48 hours. $800-2,800.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #0a0a0a;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: #000;
+            padding: 20px 0;
+            border-bottom: 2px solid #ff6b35;
+        }
+        
+        .logo {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .logo span {
+            color: #ff6b35;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d1f3d 100%);
+            padding: 80px 0;
+            text-align: center;
+            border-bottom: 3px solid #ff6b35;
+        }
+        
+        .hero h1 {
+            color: #fff;
+            font-size: 48px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero h1 span {
+            color: #ff6b35;
+        }
+        
+        .hero p {
+            color: #ccc;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 15px 35px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: #ff6b35;
+            color: #fff;
+        }
+        
+        .btn-primary:hover {
+            background: #ff8555;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #ff6b35;
+            border: 2px solid #ff6b35;
+        }
+        
+        .btn-secondary:hover {
+            background: #ff6b35;
+            color: #fff;
+        }
+        
+        /* Sections */
+        section {
+            padding: 60px 0;
+        }
+        
+        .section-light {
+            background: #f5f5f5;
+        }
+        
+        .section-dark {
+            background: #1a1a1a;
+            color: #fff;
+        }
+        
+        h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .section-dark h2 {
+            color: #ff6b35;
+        }
+        
+        /* Problem Section */
+        .problems {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .problem-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .problem-card h3 {
+            color: #ff6b35;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        
+        /* Solution Section */
+        .solution-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .step {
+            background: #2d2d2d;
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 4px solid #ff6b35;
+        }
+        
+        .step-number {
+            font-size: 48px;
+            color: #ff6b35;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .step h3 {
+            margin-bottom: 15px;
+            color: #fff;
+        }
+        
+        .step p {
+            color: #ccc;
+        }
+        
+        /* Pricing */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .pricing-card {
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .pricing-card.featured {
+            border: 3px solid #ff6b35;
+            transform: scale(1.05);
+        }
+        
+        .badge {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background: #ff6b35;
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .pricing-card h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .price {
+            font-size: 48px;
+            color: #ff6b35;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        
+        .pricing-card ul {
+            list-style: none;
+            margin: 20px 0;
+        }
+        
+        .pricing-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .pricing-card li:before {
+            content: "✓ ";
+            color: #ff6b35;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        /* Portfolio */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .portfolio-item {
+            background: #2d2d2d;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        
+        .portfolio-item h3 {
+            color: #ff6b35;
+            margin-bottom: 10px;
+        }
+        
+        .portfolio-item .genre {
+            color: #999;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        
+        .portfolio-item p {
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+        
+        /* About */
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .about-content p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        /* FAQ */
+        .faq-item {
+            background: #fff;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .faq-item h3 {
+            color: #ff6b35;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        
+        /* Final CTA */
+        .final-cta {
+            background: linear-gradient(135deg, #2d1f3d 0%, #1a1a1a 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .final-cta h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        
+        .final-cta p {
+            color: #ccc;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        
+        /* Footer */
+        footer {
+            background: #000;
+            padding: 40px 0;
+            text-align: center;
+            color: #999;
+        }
+        
+        footer a {
+            color: #ff6b35;
+            text-decoration: none;
+        }
+        
+        /* Mobile */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+            
+            h2 {
+                font-size: 28px;
+            }
+            
+            .pricing-card.featured {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Game<span>Loc</span> ES</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Launch Your Indie Game in <span>Spanish-Speaking Markets</span></h1>
+            <p>AI-powered localization + gaming expert QA. Steam-ready in 48 hours. No $5K agency fees.</p>
+            <div class="cta-buttons">
+                <a href="#pricing" class="btn btn-primary">See Packages & Pricing</a>
+                <a href="#portfolio" class="btn btn-secondary">View Sample Work</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-light">
+        <div class="container">
+            <h2>Why Most Indie Devs Avoid Spanish Localization</h2>
+            <div class="problems">
+                <div class="problem-card">
+                    <h3>Traditional Agencies = $5K+</h3>
+                    <p>Full localization agencies charge enterprise prices that indie budgets can't afford. You're not EA or Ubisoft - you need something that fits your actual budget.</p>
+                </div>
+                <div class="problem-card">
+                    <h3>Fiverr/Cheap Translation = Broken Spanish</h3>
+                    <p>Google Translate with markup. Gaming terminology wrong, cultural references lost, conversions killed. Your Spanish-speaking players notice immediately.</p>
+                </div>
+                <div class="problem-card">
+                    <h3>Doing It Yourself = Weeks of Work</h3>
+                    <p>You're a developer, not a translator. Time spent on localization is time not spent building your game. Plus you don't know gaming Spanish conventions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-dark">
+        <div class="container">
+            <h2>AI-Enhanced Localization + Gaming Expertise</h2>
+            <div class="solution-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>AI Translation</h3>
+                    <p>Advanced AI (GPT-4 + DeepL) handles initial translation. Fast, accurate on technical content, maintains formatting.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Gaming Expert QA</h3>
+                    <p>Cultural adaptation for LATAM/Spain markets. Gaming terminology accuracy. This is where 70% of the value comes from.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Delivery</h3>
+                    <p>Copy-paste ready files. Glossary for future updates. SEO keywords included. 48-hour to 10-day turnaround depending on package.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-light" id="pricing">
+        <div class="container">
+            <h2>Packages & Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Steam Store Ready</h3>
+                    <div class="price">$800</div>
+                    <ul>
+                        <li>Steam store page (EN → ES)</li>
+                        <li>48-hour delivery</li>
+                        <li>1 revision round</li>
+                        <li>Platform-optimized formatting</li>
+                        <li>Terminology glossary</li>
+                        <li>SEO keywords</li>
+                    </ul>
+                    <a href="mailto:germormal@gmail.com?subject=Interested in Steam Store Ready Package" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 20px;">Get Started</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <span class="badge">MOST POPULAR</span>
+                    <h3>Launch Package</h3>
+                    <div class="price">$1,500</div>
+                    <ul>
+                        <li>Everything in Steam Store Ready</li>
+                        <li>Epic Games Store page</li>
+                        <li>10 announcement post templates</li>
+                        <li>Press kit one-pager (Spanish)</li>
+                        <li>3 influencer email templates</li>
+                        <li>2 revision rounds</li>
+                        <li>5-day delivery</li>
+                    </ul>
+                    <a href="mailto:germormal@gmail.com?subject=Interested in Launch Package" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 20px;">Get Started</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>Full Market Entry</h3>
+                    <div class="price">$2,800</div>
+                    <ul>
+                        <li>Everything in Launch Package</li>
+                        <li>Console store pages (Nintendo/PS/Xbox)</li>
+                        <li>20 social media posts</li>
+                        <li>Community manager templates</li>
+                        <li>Influencer outreach pitch</li>
+                        <li>Curator/influencer list</li>
+                        <li>3 revision rounds</li>
+                        <li>30-day post-launch support</li>
+                        <li>10-day delivery</li>
+                    </ul>
+                    <a href="mailto:germormal@gmail.com?subject=Interested in Full Market Entry Package" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 20px;">Get Started</a>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 30px; color: #666;">✓ All packages include conversion-focused guarantee • ✓ 50% deposit, 50% on delivery</p>
+        </div>
+    </section>
+
+    <section class="section-dark" id="portfolio">
+        <div class="container">
+            <h2>Sample Work</h2>
+            <p style="text-align: center; color: #ccc; margin-bottom: 40px;">Professional localization samples demonstrating cultural adaptation and gaming expertise</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <h3>Roguelike Sample</h3>
+                    <p class="genre">Genre: Roguelike / Bullet Heaven</p>
+                    <p>Complete Steam store localization with cultural adaptation for LATAM markets. Gaming terminology verified against Spanish Steam communities. Conversion-optimized copy.</p>
+                </div>
+                <div class="portfolio-item">
+                    <h3>Narrative Game Sample</h3>
+                    <p class="genre">Genre: Story-Driven / Adventure</p>
+                    <p>Tone-matched localization maintaining narrative voice. Cultural references adapted for Spanish-speaking audiences. Character dialogue natural and engaging.</p>
+                </div>
+                <div class="portfolio-item">
+                    <h3>Action Game Sample</h3>
+                    <p class="genre">Genre: Action / Platformer</p>
+                    <p>Fast-paced copy maintaining energy and excitement. Platform-specific formatting (Steam character limits). SEO-optimized for Spanish searches.</p>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 40px;"><a href="mailto:germormal@gmail.com?subject=Request Portfolio Samples" class="btn btn-secondary">Request Full Portfolio</a></p>
+        </div>
+    </section>
+
+    <section class="section-light">
+        <div class="container">
+            <h2>About</h2>
+            <div class="about-content">
+                <p>I'm a localization specialist with experience in gaming, project management, and client success. I've worked with videogames, entertainment, and tech products throughout my career.</p>
+                <p>I built this service because I kept seeing indie developers either overpay agencies or launch with broken translations that killed their Spanish market potential.</p>
+                <p>My approach: AI handles the heavy lifting. I handle the cultural nuance, gaming terminology, and conversion optimization. You get agency-quality work at a fraction of the cost.</p>
+                <p style="margin-top: 30px;"><strong>Spanish speaker • Gamer • Your advocate in Spanish-speaking markets</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-light" style="padding-top: 0;">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>Is this just Google Translate with markup?</h3>
+                <p>No. AI does the initial translation (GPT-4 + DeepL, not Google). I then spend 4-6 hours per project adapting cultural references, checking gaming terminology against Spanish wikis/communities, and optimizing for conversion. You're paying for expertise, not automation.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Why is this cheaper than agencies?</h3>
+                <p>Agencies have overhead (offices, account managers, multiple review rounds). I'm a one-person operation using AI to handle repetitive work, so I can focus on what actually matters: making your store page convert Spanish-speaking players.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What if my game uses technical/niche terminology?</h3>
+                <p>That's exactly why you need expert QA. I cross-reference terms with Spanish gaming communities (Reddit, Discord, wikis) to ensure accuracy. If your game has custom terminology, we establish it together during onboarding.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I know the Spanish version will convert?</h3>
+                <p>I offer a conversion-focused guarantee: If your Spanish store page doesn't maintain at least 80% of your English conversion rate after 30 days (minimum 1K impressions), I'll rewrite it for free.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do you translate in-game text / UI?</h3>
+                <p>Not currently. I focus on marketing materials (store pages, announcements, press kits). For full game localization, I can refer you to specialized studios.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What if I need revisions?</h3>
+                <p>All packages include revision rounds (1-3 depending on tier). Most clients use 0-1 revisions because the onboarding call ensures I understand your game's tone upfront.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="final-cta">
+        <div class="container">
+            <h2>Ready to Launch in Spanish-Speaking Markets?</h2>
+            <p>150M+ potential players in Mexico, Spain, and LATAM. Let's get your game in front of them.</p>
+            <div class="cta-buttons">
+                <a href="mailto:germormal@gmail.com?subject=Free 15-Minute Consultation" class="btn btn-primary">Schedule Free Consultation</a>
+                <a href="mailto:germormal@gmail.com" class="btn btn-secondary">Email Me</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Spanish Game Localization Services</p>
+            <p><a href="mailto:germormal@gmail.com">germormal@gmail.com</a></p>
+            <p style="margin-top: 20px; font-size: 14px;">AI-powered translation + expert cultural QA for indie games</p>
+        </div>
+    </footer>
+</body>
+</html>
